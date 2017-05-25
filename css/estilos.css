@@ -563,6 +563,11 @@ fieldset {
   background-color: #3B5998;
   color: white; }
 
+.footer {
+  background: #464444;
+  color: #fff;
+  text-align: center; }
+
 a:hover {
   text-decoration: none; }
 
