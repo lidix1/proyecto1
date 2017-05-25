@@ -1,0 +1,96 @@
+.form-group {
+	label.error {
+		color: red; 
+		font-weight: normal;
+		&:before {
+			content: "\e014";
+			font-size: 11px;
+			display: inline-block; 
+			margin-right: 3px;
+			font-family: 'Glyphicons Halflings';
+		}
+	}
+	input.error {
+		background: #fff2f2;
+	}
+}
+.infoempresa {
+	&__titulo {
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	p {font-size: 19px; margin-bottom: 20px;}
+	&__lista{
+		padding: 0;
+		li {
+			list-style: none;
+			font-size: 17px;
+			margin-bottom: 10px;
+			span {
+				color: $celeste;
+				margin-right: 3px;
+			}
+		}
+	}
+}
+
+.boton-formulario {
+	text-align: right;
+	margin-bottom: 30px;
+	button{
+		font-size: 18px;
+	}
+}
+
+//estilos para redes sociales
+.social {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  font-size: 25px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  //padding: 12px;
+  color: white;
+  //margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}

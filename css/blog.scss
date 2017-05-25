@@ -1,0 +1,127 @@
+.articulo{
+	margin-bottom: 30px;
+	&__titulo{
+		a{
+			color: $negro;
+			font-size: 24px;
+		}
+	}
+	&__imagen{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	span{
+		font-size: 17px;
+		margin-bottom: 11px;
+		display: block;
+	}
+	&__boton{
+		border: 1px solid;
+	    padding: 10px;
+	    border-radius: 3px;
+	    font-size: 16px;
+	    margin-top: 17px;
+	    display: block;
+	    text-align: center;
+	    &:hover{
+	    	background: $celeste;
+	    	color: #fff;
+	    	border: 1px solid $celeste;
+	    }		
+	}
+}
+.panel{
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.18);
+	-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.18);
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.18);
+	padding: 25px;
+	&__titulo{
+		font-size: 20px;
+		margin-top: 0;
+		&--borde{
+			margin-bottom: 23px;
+			&:after{
+				content: '';
+				height: 1px;
+				width: 60px;
+				background: $celeste;
+				display: block;
+				margin-top: 11px;
+			} 
+		}  
+	}
+	&__lista{
+		padding-left: 33px;
+		li{
+			margin-bottom: 7px;
+			list-style: none;
+			a{
+				color: $negro;
+				position: relative;
+				&:before{
+					content: '';
+					height: 1px;
+					width: 22px;
+					background: $negro;
+					display: block;
+					margin-top: 11px;
+					position: absolute;
+					left: -32px;					
+				}
+				&:hover{
+					color: $celeste;
+					&:before{
+						background: $celeste;
+					}
+				}
+			}
+		}
+	}	
+}
+.lista-noticia{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    padding-top: 15px;	
+	&__item{
+	    display: inline-block;
+	    width: 100%;
+	    color: $negro;		
+		
+		img { float: left; margin-right: 14px; }
+		
+		&:hover{
+			color: $celeste; 
+		} 
+	}
+	&:last-child{
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+.breadcrumb { 
+	background-color: transparent;
+    padding-left: 0;
+    margin-top: 10px;	
+}
+.headerblog{
+	background-image: url('../img/blog/headerblog.jpg');
+	background-size: cover;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+	h1 {font-size: 27px;}
+}
+
+@media (min-width: 768px) {
+	.articulo__boton {display: inline-block;} 
+}
+@media (min-width: 992px) {
+	.headerblog {
+		height: 200px;
+		margin-bottom: 46px;
+		h1{
+			margin-top: 50px;
+			font-size: 36px;
+
+		}
+	}
+}
